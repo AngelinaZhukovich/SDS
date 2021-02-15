@@ -1,0 +1,38 @@
+.hero {
+    background: #353A3F;
+
+    color: #fff;
+
+    &__title {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding-bottom: 45px;
+        text-transform: uppercase;
+
+        @media (max-width: 799px) {
+            font-size: 32px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+
+        @media (max-width: 799px) {
+            font-size: 24px;
+        }
+    }
+
+    &__content {
+        color: #939698;
+        font-size: 22px;
+        line-height: 1.6;
+        padding-bottom: 50px;
+
+        @media (max-width: 799px) {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.aside {
+    background-color: #282d32;
+    flex-basis: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 10px;
+
+    @media (max-width: 799px) {
+        align-items: center;
+        background-color: #282d32;
+        
+        display: flex;
+        flex-basis: auto;
+        height: 70px;
+        justify-content: space-between;
+        padding: 10px 20px;
+        position: relative;
+        width: 100%;
+    }
+
+    .logo {
+        color: #4cb480;
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 65px;
+        padding-top: 45px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        
+        @media(max-width: 799px) {
+            margin-bottom: 0;
+            padding-top: 0;
+        }
+    }
+    
+    .logo:after {
+        background: #4cb480;
+        bottom: -9px;
+        content: "";
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 25px;
+    }
+    
+    .search-icon {
+        padding: 20px 0;
+        text-align: center;
+    
+        @media (max-width: 799px) {
+            padding: 0;
+        }
+    }
+    
+    .search-icon svg {
+        fill: white;
+        height: 28px;
+        width: 28px;
+        @media (max-width: 799px) {
+            display: block;
+            height: 25px;
+            width: 25px;
+        }
+    
+    }
+}
+
