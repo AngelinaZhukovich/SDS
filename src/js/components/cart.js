@@ -26,7 +26,7 @@ export class Cart {
     }
 
     addItem(item){
-        this.item.push(item);
+        this.items.push(item);
     }
 
     removeItem(index){

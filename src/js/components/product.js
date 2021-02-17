@@ -5,7 +5,7 @@ import { Cart } from './cart';
 document.addEventListener('DOMContentLoaded', () => {
     const cartBtn = document.querySelector('#cart');
     const products = document.querySelector('.products');
-    const badge = document.querySelector('.badge');
+    const badge = document.querySelector('#badge');
 
     const cart = new Cart();
 
