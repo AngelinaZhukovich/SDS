@@ -1,4 +1,4 @@
-import './components/a';
-import './components/b';
-import './components/c';
+import './components/cart';
+import './components/product';
+// import './components/c';
 
