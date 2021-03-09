@@ -18,7 +18,7 @@ function fonts() {
     return gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('./public/fonts'));
 }
- 
+
 function img() {
     return gulp.src('src/img/*')
         .pipe(gulp.dest('./public/img'))

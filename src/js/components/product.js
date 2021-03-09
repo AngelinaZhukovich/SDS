@@ -1,8 +1,8 @@
 // const b = () => console.log('hello');
-
 import { Cart } from './cart';
 
 document.addEventListener('DOMContentLoaded', () => {
+
     const cartBtn = document.querySelector('#cart');
     const products = document.querySelector('.products');
     const badge = document.querySelector('#badge');
@@ -15,10 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             badge.innerText = cart.countItem();
             console.log(cart.getItemList());
         }
-            
-
-
     })
-    
 
 })

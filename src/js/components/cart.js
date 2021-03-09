@@ -14,31 +14,27 @@
 
 // q([1,2,3], 5);
 
-
-
 export class Cart {
-    constructor(){
-        this.items = [
-            
-        ];
+    constructor() {
+        this.items = [];
     }
 
-    countItem (){
+    countItem() {
         return this.items.length;
     }
-    getItemList(){
-        return this.items;
 
+    getItemList() {
+        return this.items;
     }
 
-    addItem(item){
+    addItem(item) {
         this.items.push(item);
     }
 
-    removeItem(index){
-        this.item.splice(index,1);
+    removeItem(index) {
+        this.items.splice(index, 1);
     }
-};
+}
 
 
 
