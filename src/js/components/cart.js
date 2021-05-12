@@ -30,6 +30,7 @@ export class Cart {
 
     addItem(item) {
         this.items.push(item);
+        store.dispatch({ type:'addToCart'})
     }
 
     removeItem(index) {
