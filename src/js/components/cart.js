@@ -13,6 +13,7 @@
 // }
 
 // q([1,2,3], 5);
+import { store } from './store';
 
 export class Cart {
     constructor() {
@@ -20,7 +21,7 @@ export class Cart {
     }
 
     countItem() {
-        return this.items.length;
+        return store.getState().cartCounter;
     }
 
     getItemList() {

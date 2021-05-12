@@ -1,5 +1,6 @@
 // const b = () => console.log('hello');
 import { Cart } from './cart';
+import { store } from './store';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -7,14 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = document.querySelector('.products');
     const badge = document.querySelector('#badge');
 
+    
+
     const cart = new Cart();
 
     products.addEventListener('click', (event) => {
         if (event.target.nodeName === 'BUTTON' && event.target.dataset.id) {
             cart.addItem(event.target.dataset.id);
             badge.innerText = cart.countItem();
-            console.log(cart.getItemList());
-        }
+            
+            }
     })
 
 })
