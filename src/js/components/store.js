@@ -1,37 +1,30 @@
-import { initial } from 'lodash'
-import { createStore } from 'redux'
+import { createStore } from 'redux';
 
-
-const appState= {
+const initialState = {
     cartCounter: 0,
-    selectedFilter: null,
-
+    selectedFilter: 'm'
 }
 
-function appReducer(appState=initialState, action) {
-
-    switch (action.type){
+function appReducer(appState = initialState, action) {
+    switch (action.type) {
         case 'addToCart':
-            return { 
-                ...appState,
-                cartCounter:appState.cartCounter +1}
-
-        // case 'deleteFromCart':
-        //     return { cartCounter:appState.cartCounter -1}
-
-        case 'awitchFilter':
             return {
                 ...appState,
-                selectedFilter: action.payload}
-        
+                cartCounter: appState.cartCounter + 1
+            }
+        case 'switchFilter':
+            return {
+                ...appState,
+                selectedFilter: action.payload
+            }
         default:
-            return appState
+            return appState;
     }
 
-    
 }
 
 let store = createStore(appReducer);
-store.subscribe(() => console.log(store.getState()))
 
-export {store};
+store.subscribe(() => console.log(store.getState()));
+
+export { store };

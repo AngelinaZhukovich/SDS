@@ -2,6 +2,6 @@ import Glide from '@glidejs/glide';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    new Glide('.glide').mount();
+    // new Glide('.glide').mount();
 
 });
